@@ -8,14 +8,14 @@ export const CanvasBG = () => {
     const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "white";
 
     class Ball {
       constructor(effect) {
         this.effect = effect;
         this.x = this.effect.width * 0.5;
         this.y = this.effect.height * 0.5;
-        this.radius = Math.random() * 200 + 20;
+        this.radius = Math.random() * 300 + 20;
         this.speedX = Math.random() - 0.5;
         this.speedY = Math.random() - 0.5;
       }
@@ -63,7 +63,7 @@ export const CanvasBG = () => {
     }
 
     const effect = new MetaBallsEffect(canvas.width, canvas.height);
-    effect.init(0);
+    effect.init(40);
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
