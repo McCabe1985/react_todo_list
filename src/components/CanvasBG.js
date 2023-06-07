@@ -8,7 +8,7 @@ export const CanvasBG = () => {
     const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "red";
 
     class Ball {
       constructor(effect) {
@@ -63,7 +63,7 @@ export const CanvasBG = () => {
     }
 
     const effect = new MetaBallsEffect(canvas.width, canvas.height);
-    effect.init(30);
+    effect.init(0);
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -78,9 +78,8 @@ export const CanvasBG = () => {
       ctx.fillStyle = "white";
       effect.reset(canvas.width, canvas.height);
     });
-    return () => {
-      animate();
-    };
+
+    animate();
   }, []);
   return <canvas id="canvas" ref={canvasRef}></canvas>;
 };
