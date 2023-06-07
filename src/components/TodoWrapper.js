@@ -43,7 +43,10 @@ export const TodoWrapper = () => {
   return (
     <div className="app-container">
       <h1 className="app-heading">Todo list</h1>
-      <a className="link-to-code">
+      <a
+        href="https://github.com/McCabe1985/react_todo_list"
+        className="link-to-code"
+      >
         &lt;/
         <span>the code</span>
         &gt;
