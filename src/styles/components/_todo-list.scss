@@ -10,6 +10,7 @@ a {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  background: black;
 }
 .app-container {
   @include flexContainer(column);
