@@ -49,7 +49,7 @@ export const TodoWrapper = () => {
       >
         &lt;
         <span>the code</span>
-        /&gt;
+        &gt;
       </a>
       <TodoForm addTodo={addTodo} />
       {/* display todos */}
