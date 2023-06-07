@@ -411,6 +411,10 @@ body,
   animation: shrinkIn 1s ease 0s 1 normal forwards;
 }
 
+a {
+  cursor: pointer;
+}
+
 .App {
   width: 100%;
   display: flex;

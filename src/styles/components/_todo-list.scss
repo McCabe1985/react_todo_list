@@ -1,5 +1,7 @@
 @use "../utils/" as *;
-
+a {
+  cursor: pointer;
+}
 .App {
   width: 100%;
   @include flexContainer(row);
