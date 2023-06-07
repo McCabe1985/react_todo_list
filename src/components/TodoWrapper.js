@@ -47,9 +47,9 @@ export const TodoWrapper = () => {
         href="https://github.com/McCabe1985/react_todo_list"
         className="link-to-code"
       >
-        &lt;/
+        &lt;
         <span>the code</span>
-        &gt;
+        &gt;/
       </a>
       <TodoForm addTodo={addTodo} />
       {/* display todos */}
